@@ -1,0 +1,107 @@
+<view class="intro">
+    <view class="user-info">
+        <view class="user-info-attr">
+            <image class="user-info-attr-img" tt:if="{{isLogin}}" src="{{userInfo.avatarUrl}}" />
+            <view tt:else class="user-info-attr-img"></view>
+        </view>
+        <view class="user-info-base">
+            <view tt:if="{{isLogin}}">
+                <view class="info-name">{{userInfo.nickName}}</view>
+                <view class="info-sign">{{userSign}}</view>
+            </view>
+            <view tt:else bindtap="toLogin">
+                {{notLogin}}
+            </view>
+        </view>
+    </view>
+        <view class="page-section-spacing">
+            <scroll-view class="scroll-view_H" scroll-x="true" style="width: 100%">
+                <view id={{item.id}} data-item={{item}} name={{item.name}} class="scroll-view-item_H"
+                    tt:for="{{tabList}}" tt:for-index="idx" tt:for-item="item" bindtap="tapName">
+                    <text>{{item.name}}</text>
+                </view>
+            </scroll-view>
+        </view>
+    <scroll-view id="scrollView" scroll-y scroll-with-animation 
+        style={{scrollStyle}} scroll-into-view="{{toView}}">
+        <view class="info-div">
+            <view id="tab1">
+            <view class="info-title">个人能力1</view>
+            <view class="info-detail">
+                <view class="detail-item"><text class="detail-label">姓名:</text><text
+                        class="detail-value">{{resumeData.name}}</text></view>
+                <view class="detail-item"><text class="detail-label">姓名:</text><text
+                        class="detail-value">{{resumeData.name}}</text></view>
+                <view class="detail-item"><text class="detail-label">姓名:</text><text
+                        class="detail-value">{{resumeData.name}}</text></view>
+                <view class="detail-item"><text class="detail-label">姓名:</text><text
+                        class="detail-value">{{resumeData.name}}</text></view>
+                <view class="detail-item"><text class="detail-label">姓名:</text><text
+                        class="detail-value">{{resumeData.name}}</text></view>
+                <view class="detail-item"><text class="detail-label">姓名:</text><text
+                        class="detail-value">{{resumeData.name}}</text></view>
+                <view class="detail-item"><text class="detail-label">姓名:</text><text
+                        class="detail-value">{{resumeData.name}}</text></view>
+                <view class="detail-item"><text class="detail-label">姓名:</text><text
+                        class="detail-value">{{resumeData.name}}</text></view>
+                <view class="detail-item"><text class="detail-label">姓名:</text><text
+                        class="detail-value">{{resumeData.name}}</text></view>
+                <view class="detail-item"><text class="detail-label">姓名:</text><text
+                        class="detail-value">{{resumeData.name}}</text></view>
+            </view>
+            </view>
+            <view id="tab2">
+<view class="info-title">个人能力2</view>
+            <view class="info-detail">
+                <view class="detail-item"><text class="detail-label">姓名:</text><text
+                        class="detail-value">{{resumeData.name}}</text></view>
+                <view class="detail-item"><text class="detail-label">姓名:</text><text
+                        class="detail-value">{{resumeData.name}}</text></view>
+                <view class="detail-item"><text class="detail-label">姓名:</text><text
+                        class="detail-value">{{resumeData.name}}</text></view>
+                <view class="detail-item"><text class="detail-label">姓名:</text><text
+                        class="detail-value">{{resumeData.name}}</text></view>
+                <view class="detail-item"><text class="detail-label">姓名:</text><text
+                        class="detail-value">{{resumeData.name}}</text></view>
+                <view class="detail-item"><text class="detail-label">姓名:</text><text
+                        class="detail-value">{{resumeData.name}}</text></view>
+                <view class="detail-item"><text class="detail-label">姓名:</text><text
+                        class="detail-value">{{resumeData.name}}</text></view>
+                <view class="detail-item"><text class="detail-label">姓名:</text><text
+                        class="detail-value">{{resumeData.name}}</text></view>
+                <view class="detail-item"><text class="detail-label">姓名:</text><text
+                        class="detail-value">{{resumeData.name}}</text></view>
+                <view class="detail-item"><text class="detail-label">姓名:</text><text
+                        class="detail-value">{{resumeData.name}}</text></view>
+            </view>
+            </view>
+            <view id="tab3">
+                 <view class="info-title">个人能力3</view>
+            <view class="info-detail">
+                <view class="detail-item"><text class="detail-label">姓名:</text><text
+                        class="detail-value">{{resumeData.name}}</text></view>
+                <view class="detail-item"><text class="detail-label">姓名:</text><text
+                        class="detail-value">{{resumeData.name}}</text></view>
+                <view class="detail-item"><text class="detail-label">姓名:</text><text
+                        class="detail-value">{{resumeData.name}}</text></view>
+                <view class="detail-item"><text class="detail-label">姓名:</text><text
+                        class="detail-value">{{resumeData.name}}</text></view>
+                <view class="detail-item"><text class="detail-label">姓名:</text><text
+                        class="detail-value">{{resumeData.name}}</text></view>
+                <view class="detail-item"><text class="detail-label">姓名:</text><text
+                        class="detail-value">{{resumeData.name}}</text></view>
+                <view class="detail-item"><text class="detail-label">姓名:</text><text
+                        class="detail-value">{{resumeData.name}}</text></view>
+                <view class="detail-item"><text class="detail-label">姓名:</text><text
+                        class="detail-value">{{resumeData.name}}</text></view>
+                <view class="detail-item"><text class="detail-label">姓名:</text><text
+                        class="detail-value">{{resumeData.name}}</text></view>
+                <view class="detail-item"><text class="detail-label">姓名:</text><text
+                        class="detail-value">{{resumeData.name}}</text></view>
+            </view>
+            </view>
+           
+    </scroll-view>
+
+</view>
+</view>
